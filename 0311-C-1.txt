@@ -1,0 +1,49 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+
+    char name[20];
+    int day;
+    float money;
+    char grade;
+    
+    
+    printf("---------------------\n");
+    printf("여행 정보 입력 프로그램\n");
+    printf("---------------------\n");
+    
+    
+    printf("\n여행지 이름을 입력하세요...>>"); //화면출력 f(서식)
+    // 숫자->"" 없음 "문자"
+    
+    scanf("%s",name); // 키보드로 입력
+    //&-> 주소 의미      // 문자열 %s
+    /*문자열은 왜 &을 사용하지않을까? -> 
+    문자열 변수 선언에 name[20]에서 [20]이 곧주소명이기 때문. 배열이 곧 주소.*/
+    
+    printf("여행 일수는 몇일인지 적으세요...>>");
+    scanf("%d",&day); // 정수 %d
+    
+    printf("여행 경비는 얼마이신가요..>>"); // 실수 %f
+    scanf("%f",&money);
+    
+    printf("여행 등급은 몇등급인지 입력하세요...>>");
+    scanf(" %c",&grade); // 문자 %c
+    
+    printf("---------------------\n");
+    printf("여행 정보 입력 프로그램\n");
+    printf("---------------------\n");
+    
+    printf("당신의 여행정보\n");
+    printf("여행지 이름:\t%s\n",name);
+    printf("여행 일수:\t%d\n",day);
+    printf("여행 경비:\t%5.1f\n",money);
+    printf("여행 등급:\t%c\n",grade);
+    
+    
+
+
+
+    return 0;
+}
