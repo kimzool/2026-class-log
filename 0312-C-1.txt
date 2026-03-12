@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    
+    
+   while(1)
+{    
+    printf("1에서 20의 숫자를 골라주세요..>");
+    scanf("%d",&a);
+    
+    
+ 
+    
+    if(a==10){
+        printf("정답입니다 !\n");
+        break;
+    }
+    else if(a>10){
+        printf("10보다 큽니다..\n");
+     
+    }
+    else{
+        printf("10보다 작습니다..\n");
+      
+        
+    }
+    
+    }
+
+    return 0;
+}
