@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h> // rand(), srand() 함수용
+
+
+int main()
+{
+
+
+
+    int menu;
+    
+    printf("좋아하는 메뉴를 선택해주세요 ( 1:치킨 2:피자 3:떡볶이 4:햄버거 5~7:랜덤 )..>>");
+    scanf("%d",&menu);
+    
+    while(1){
+    
+
+    
+    
+    
+    if(menu == 1){
+        printf("치킨을 선택하셨습니다.");
+        break;
+    }
+    else if(menu == 2){
+        printf("피자를 선택하셨습니다.");
+        break;
+    }
+    else if(menu == 3){
+        printf("떡볶이를 선택하셨습니다.");
+        break;
+    }
+    else if(menu == 4){
+        printf("햄버거를 선택하셨습니다");
+        break;
+    }
+    else if(menu >= 5 && menu <=7){ // && : and
+        printf("랜덤돌리는중..\n");
+        menu = rand() % 4 + 1; // 개수:4개 랜덤 시작 : 1
+        
+    }
+    else{
+        printf("입력오류");
+        break;
+    }
+
+    
+    
+    
+    }
+    
+    
+    
+    
+
+    return 0;
+}
