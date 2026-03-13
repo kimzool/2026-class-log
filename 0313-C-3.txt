@@ -1,0 +1,120 @@
+#include <stdio.h>
+
+
+int main()
+{
+
+    char op; // 사칙연산 입력 변수
+    int num1; // 1번 정수
+    int num2; // 2번 정수
+    int sum; // 덧셈
+    int sub; // 뺄셈
+    int mul; // 곱셈
+    double divi; // 나눗셈
+    
+    printf("1번 정수의 숫자를 입력해주세요.");
+    scanf("%d",&num1);
+    
+    printf("\n2번 정수의 숫자를 입력해주세요.");
+    scanf("%d",&num2);
+    
+    
+  /*  
+    printf("사칙연산중 하나를 입력해주세요.(+,-,*,/)..>>");
+    scanf(" %c",&op);
+    
+    switch(op) {
+        
+
+        
+        case '+':
+            printf("덧셈을 고르셨습니다.\n");
+            sum = num1 + num2;
+            
+            printf("1번정수와 2번정수의 덧셈값 : %d",sum);
+            break;  
+            
+        case '-':
+            printf("뺄셈을 고르셨습니다.\n");
+            sub = num1 - num2;
+        
+            printf("1번정수와 2번정수의 뺄셈값 : %d",sub);
+            break;
+            
+        case '*':
+        
+            printf("곱셈을 고르셨습니다\n");
+            mul = num1 * num2;
+        
+            printf("1번정수와 2번정수의 곱셈값: %d",mul);
+            break;
+        
+        case '/':
+            printf("나눗셈을 고르셨습니다\n");
+            divi = num1/num2;
+        
+            printf("1번정수와 2번정수의 나눗셈값: %.2f",divi);
+            break;
+            
+        default:
+            printf("입력 오류");
+            break;
+    }
+    
+    */
+    
+    
+    
+    
+    while(1) {
+    printf("사칙연산중 하나를 입력해주세요.(+,-,*,/)..>>");
+    scanf(" %c",&op);
+    
+    
+    if(op =='+'){
+        printf("덧셈을 고르셨습니다.\n");
+        sum = num1 + num2;
+        
+        printf("1번정수와 2번정수의 덧셈값 : %d",sum);
+        break;
+    }
+    
+    else if(op =='-'){
+        printf("뺄셈을 고르셨습니다.\n");
+        sub = num1 - num2;
+        
+        printf("1번정수와 2번정수의 뺄셈값 : %d",sub);
+        break;
+    }
+    
+    else if(op =='*'){
+        printf("곱셈을 고르셨습니다\n");
+        mul = num1 * num2;
+        
+        printf("1번정수와 2번정수의 곱셈값: %d",mul);
+        break;
+    }
+    
+    else if(op =='/'){
+        printf("나눗셈을 고르셨습니다\n");
+        divi = num1/num2;
+        
+        printf("1번정수와 2번정수의 나눗셈값: %f",divi);
+        break;
+    }
+    
+    else{
+        printf("입력오류");
+        break;
+    }
+
+
+
+
+
+
+    }
+    
+
+    return 0;
+}
